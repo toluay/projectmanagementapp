@@ -15,7 +15,7 @@
     </head>
     <body class="antialiased">
         <div id="app">
-           ffggfgfg 
+          <app-component> </app-component>
         </div>
         <script src="{{asset('js/app.js')}}"></script>
     </body>
