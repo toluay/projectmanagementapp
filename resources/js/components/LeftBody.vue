@@ -13,7 +13,7 @@
 <div class="project">
     <div class="a-project">
         <div class="box-color">
-            <img src="../../images/overlay.png" alt="" srcset="">
+            <img src="../images/overlay.png" alt="" srcset="">
             <span>PT</span>
         </div>
         <h6>Development</h6>
@@ -21,7 +21,7 @@
     <!-- break -->
     <div class="a-project">
         <div class="box-color">
-            <img src="../../images/overlay.png" alt="" srcset="">
+            <img src="../images/overlay.png" alt="" srcset="">
             <span>PT</span>
         </div>
         <h6>Design</h6>
@@ -29,7 +29,7 @@
     <!-- break -->
     <div class="a-project">
         <div class="box-color">
-            <img src="../../images/overlay.png" alt="" srcset="">
+            <img src="../images/overlay.png" alt="" srcset="">
             <span>PT</span>
         </div>
         <h6>Testing</h6>
@@ -37,7 +37,7 @@
     <!-- break -->
     <div class="a-project">
         <div class="box-color">
-            <img src="../../images/overlay.png" alt="" srcset="">
+            <img src="../images/overlay.png" alt="" srcset="">
             <span>PT</span>
         </div>
         <h6>Medium Draft</h6>
@@ -45,7 +45,7 @@
     <!-- break -->
     <div class="a-project">
         <div class="box-color">
-            <img src="../../images/overlay.png" alt="" srcset="">
+            <img src="../images/overlay.png" alt="" srcset="">
             <span>PT</span>
         </div>
         <h6>Landing Page</h6>
@@ -53,7 +53,7 @@
     <!-- break -->
     <div class="a-project">
         <div class="box-color">
-            <img src="../../images/overlay.png" alt="" srcset="">
+            <img src="../images/plus.png" alt="" srcset="">
             <span>PT</span>
         </div>
         <h6>Add Project</h6>
