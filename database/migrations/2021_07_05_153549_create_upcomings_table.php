@@ -19,7 +19,7 @@ class CreateUpcomingsTable extends Migration
             $table->boolean("completed")->default(false);
             $table->boolean("approved")->default(false);
             $table->boolean("waiting")->default(true);
-            $table->string("taskID");
+            $table->string("task_id");
             $table->timestamps();
         });
     }

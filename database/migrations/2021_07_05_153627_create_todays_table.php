@@ -18,7 +18,7 @@ class CreateTodaysTable extends Migration
             $table->string("title");
             $table->boolean("completed")->default(false);
             $table->boolean("approved")->default(false);
-            $table->string("taskID");
+            $table->string("task_id");
             $table->timestamps();
         });
     }
