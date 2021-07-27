@@ -11,10 +11,12 @@
 <script>
 import Body from './Body';
 import LeftBody from './LeftBody.vue'
+import RightBody from './RightBody.vue'
 export default {
   components: {
       Body,
-      LeftBody
+      LeftBody,
+      RightBody
   },
 };
 </script>

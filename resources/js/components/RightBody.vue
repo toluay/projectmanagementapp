@@ -53,6 +53,26 @@
       </ul>
     </div>
 
+<div class="upcoming">
+    <div class="add-tasks">
+        <h2>Upcoming</h2>
+        <div class="add-action">
+            <img src="../images/add.png" alt="add image "/>
+        </div>
+        <form action="" method="post" @submit="addUpcomingTask">
+            <input type="text" name="" id="" v-model="newTask">
+        </form>
+        <ul class="tasks-list">
+            <li v-for="upcomingtask in upcoming" v-bind:key="upcomingtask.id">
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    
+
   </div>
 </template>
 
@@ -60,12 +80,35 @@
 export default {
   data() {
     return { 
+        todayTask:[],
+        upcoming:[],
+        newTask :"",
     };
   },
   created() { 
+      this.fetchTodayTasks();
+      this.fetchUpcoming();
   },
 
   methods: { 
+      // fetch todays tasks 
+      fetchTodayTasks(){
+
+      },
+      //fetchupcoming tasks 
+      fetchUpcoming(){
+          fetch('/api/upcoming').
+          then(res=>res.json()).
+          then((data )=>{
+              console.log(data);
+                this.upcoming=data;
+          })
+          .catch(err=>{
+                console.log(err);
+          });
+
+      }
+
   },
 };
 </script>

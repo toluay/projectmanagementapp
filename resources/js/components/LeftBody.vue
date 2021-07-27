@@ -11,6 +11,8 @@
     <img src="../images/search.png" alt="" srcset="">
 </div>
 <div class="project">
+    <h3> Projects <span>(12)</span> </h3>
+    <div class="projects">
     <div class="a-project">
         <div class="box-color">
             <img src="../images/overlay.png" alt="" srcset="">
@@ -57,6 +59,8 @@
             <span>PT</span>
         </div>
         <h6>Add Project</h6>
+    </div>
+
     </div>
 </div>
     </div>
