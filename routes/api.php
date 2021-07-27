@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Resources\TodayTaskResource;
 use App\Http\Resources\UpcomingTaskResource;
 use App\Models\Today;
 use Illuminate\Http\Request;
@@ -45,6 +46,14 @@ Route::delete('/upcomming/{taskId}',function($taskId){
 } );
 
 //* Today task */
+
+// get all tasks 
+
+Route::get('/daily', function(){
+   $todaytask = Today::all();
+   return TodayTaskResource::collection($todaytask); 
+});
+//add today task 
 Route::post('/dailytask', function(Request $request){
     return Today::create([
         'id'=>$request->id,
