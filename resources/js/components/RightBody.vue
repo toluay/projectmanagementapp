@@ -71,7 +71,7 @@
                             <input type="checkbox" name="test" :checked="upcomingtask.completed" @change="checkUpcoming(upcomingtask.taskId)">
                             <span></span>
                         </label>
-                        <h4>{upcomingtask.title}}</h4>
+                        <h4>{{upcomingtask.title}}</h4>
                     </div>
                     <div class="right">
                         <img src="../images/edit.png" alt="edit" >

@@ -26,11 +26,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // ** Upcoming Tasks *//
 Route::get("/upcoming", function(){
     $upcoming=Upcoming::all();
+    //dd($upcoming);
 
     return UpcomingTaskResource::collection($upcoming);
 });
 //Add A new TASK 
-Route::post('/Upcoming', function( Request  $request){
+Route::post('/upcoming', function( Request  $request){
     return Upcoming::create([
         'title'=>$request->title,
         'taskId'=>$request->taskId,
@@ -49,7 +50,7 @@ Route::delete('/upcomming/{taskId}',function($taskId){
 
 // get all tasks 
 
-Route::get('/daily', function(){
+Route::get('/dailytask', function(){
    $todaytask = Today::all();
    return TodayTaskResource::collection($todaytask); 
 });
